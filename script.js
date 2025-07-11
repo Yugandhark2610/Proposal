@@ -37,7 +37,7 @@ function handleYesClick() {
     }, 1000);
 }
 
-// Handle "No" button click
+// Handle "No" button click - Now stable, no moving
 function handleNoClick(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -49,7 +49,7 @@ function handleNoClick(e) {
     } else if (noClickCount === 2) {
         showHintMessage("😭 But I still believe in us...");
     } else if (noClickCount === 3) {
-        showHintMessage("💔 Please don’t do this... 😭");
+        showHintMessage("💔 Please don't do this... 😭");
     } else if (noClickCount >= 4) {
         showHintMessage("Goodbye... 💔");
         setTimeout(() => {
